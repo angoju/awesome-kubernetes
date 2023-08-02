@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_awesome_kubernetes_1690977288678-push-trigger-input-set
+  identifier: Build_awesome_kubernetes_1690977288678pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: sample
+  pipeline:
+    identifier: Build_awesome_kubernetes_1690977288678
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
