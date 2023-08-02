@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_awesome_kubernetes_1690977288678-pr-trigger-input-set
+  identifier: Build_awesome_kubernetes_1690977288678prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: sample
+  pipeline:
+    identifier: Build_awesome_kubernetes_1690977288678
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
